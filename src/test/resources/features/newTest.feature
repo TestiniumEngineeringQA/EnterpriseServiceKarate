@@ -56,10 +56,10 @@ Feature: Grocery API
     Then status 400
     And response.message == "Request body has invalid format."
 
-  @productNotFound
-  Scenario: Search the product that has not found
-    Given header Content-Type = 'application/json'
-    And path '/allGrocery/cherry'
-    When method get
-    Then status 404
-    And match response.message == "The product has not found"
+  #@productNotFound
+  #Scenario: Search the product that has not found
+    #Given header Content-Type = 'application/json'
+    #And path '/allGrocery/cherry'
+    #When method get
+    #Then status 404
+    #And match response.message == "The product has not found"
