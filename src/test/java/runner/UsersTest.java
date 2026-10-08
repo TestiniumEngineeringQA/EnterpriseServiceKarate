@@ -3,7 +3,7 @@ package runner;
 
 import com.intuit.karate.junit5.Karate;
 
-classfailure UsersTest {
+class UsersTest {
 
     @Karate.Test
     Karate testUi() {
